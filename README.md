@@ -118,6 +118,7 @@ buildDir      | dev: false; prod: "builtAssets" | The directory to save (and loa
 compile       | true                            | Should assets be compiled if they don’t already exist in the `buildDir`?
 compress      | dev: false; prod: true          | Should assets be minified? If enabled, requires `uglify-js` and `csso`.
 gzip          | false                           | Should assets have gzipped copies in `buildDir`?
+flush         | false                           | If you compile the assets from CLI in production, set it to true to flush the file without recompiling it.
 
 ## Serving Assets from a CDN
 
