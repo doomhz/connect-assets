@@ -139,7 +139,7 @@ Optional arguments:
   -i [DIRECTORY [DIRECTORY ...]], --include [DIRECTORY [DIRECTORY ...]]
                         Adds the directory to a list of directories that
                         assets will be read from, in order of preference.
-                        Defaults to 'assets/js' and 'assets/css'.
+                        Defaults to ''.
   -c [FILE [FILE ...]], --compile [FILE [FILE ...]]
                         Adds the file (or pattern) to a list of files to
                         compile. Defaults to all files.
