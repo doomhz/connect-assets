@@ -20,12 +20,11 @@ var initialize = exports.initialize = function () {
 
   cli.addArgument(["-i", "--include"], {
     help: "Adds the directory to a list of directories that assets will be " +
-      "read from, in order of preference. Defaults to 'assets/js' and " +
-      "'assets/css'.",
+      "read from, in order of preference. Defaults to ''.",
     metavar: "DIRECTORY",
     action: "append",
     nargs: "*",
-    defaultValue: [ "assets/js", "assets/css" ]
+    defaultValue: []
   });
 
   cli.addArgument(["-c", "--compile"], {
@@ -122,7 +121,8 @@ var _compile = exports._compile = function (args, callback) {
     gzip: args.gzip,
     buildDir: args.output,
     servePath: args.servePath,
-    precompile: args.compile
+    precompile: args.compile,
+    flush: false
   });
 
   assets.compile(callback);
