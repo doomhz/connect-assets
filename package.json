@@ -1,6 +1,6 @@
 {
   "name": "connect-assets",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "author": "Andrew Dunkman <andrew@dunkman.org>",
   "description": "A Rails-like asset pipeline for Connect",
   "contributors": [
@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/adunkman/connect-assets.git"
+    "url": "https://github.com/doomhz/connect-assets.git"
   },
   "engines": {
     "node": ">=0.10.0"
